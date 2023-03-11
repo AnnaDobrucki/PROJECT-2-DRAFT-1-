@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fafafa;
+}
