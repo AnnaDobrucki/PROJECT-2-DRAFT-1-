@@ -3,7 +3,7 @@
 
 
 body {
-    background-color: #A509CC;
+    background-color: #a609ce;
 }
 
 h1 {
@@ -18,25 +18,33 @@ h1 {
 }
 
 .container {
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 500px;
-    width: 500px;
     flex-direction: column;
 }
 
 #play-board{
-    width: 600px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 1em;
+
 }
 
 .box {
-    border: 1px solid white;
-    height: 100px;
-    width: 100px;
-    display: column;
-    align-items: center;
+    height: 150px;
+    width: 150px;
+    border: white 1px solid;
+    border-radius: 5px;
+    margin: 1px;
+    text-align: center;
+
+    justify-content: center;
+    align-content: center;
+    display: flex;
 
 }
