@@ -7,7 +7,7 @@ usernameForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const userName = event.target.username.value;
     document.getElementById("username-chosen").innerHTML= `<h2 id="username-style">${userName} VS Nemesis</h2>`;
-    document.getElementById("name-score").innerHTML = `<p>${userName}'s score <span  class="counter-color" id="win">0</span> </p>`;
+    document.getElementById("name-score").innerHTML = `<p>${userName}'s score <span  class="counter-color" id="win">0</span></p>`;
 
 
     if(userName.trim() == ""){
