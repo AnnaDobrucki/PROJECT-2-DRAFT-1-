@@ -43,3 +43,22 @@ function scoreWin() {
     let scoreLoose = parseInt(document.getElementById("loose").innerText);
     document.getElementById("loose").innerText = ++scoreLoose;
 }
+
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("rules-button");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
