@@ -12,9 +12,21 @@
     <title>Tik Tak Toe</title>
 </head>
 <body>
-    <div class="contanier">
+    <div>
         <h1 id="title-card"> Tik Tac Toe </h1>
+       
+        <div id="username-display-area">
+            <p>Enter challenger name here!</p>
+            <form id="username-form">
+                <input type="text" id="user-name" placeholder="Enter Username" name="username" required>
+                <input type="submit" value="Submit Username" />
+            </form>
+            <span id="username-chosen"></span> 
+        </div>
+    </div>
+    <div class="contanier">
         <button id="btn-replay">Replay</button>
+
 
         <div id="play-board">
             <div class="box" id="0"></div>
@@ -29,8 +41,9 @@
         </div>
         <span> Game Over </span>
     </div>
+   
     <div class="score-area">
-        <p class="scores"> Score Win <span id="win">0</span></p>
+        <p class="scores" id="name-score"> Score Win <span id="win">0</span></p>
         <p class="scores"> Nemisis Win <span id="loose">0</span></p>
     </div>
     <script src="assets/js/script.js"></script>
