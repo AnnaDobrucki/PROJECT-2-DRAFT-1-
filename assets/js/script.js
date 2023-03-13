@@ -1,20 +1,20 @@
 /**
- * function for the use of a username within game
+ * function for the use of a username within game and removal of username input once chosen
  */
 const usernameForm = document.querySelector("#username-form");
 
 usernameForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const userName = event.target.username.value;
-    document.getElementById("username-chosen").innerHTML= `<h2>${userName}</h2>`;
+    document.getElementById("username-chosen").innerHTML= `<h2 id="username-style">${userName} VS Nemesis</h2>`;
 
     if(userName.trim() == ""){
         alert("Please enter a username!");
+
     } else {
         let nameArea = document.querySelector("#username-form");
         nameArea.style.display = "none";
     }
-
 })
 
 function checkGame(){
