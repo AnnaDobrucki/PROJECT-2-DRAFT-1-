@@ -8,7 +8,7 @@ usernameForm.addEventListener('submit', function(event) {
     const userName = event.target.username.value;
     document.getElementById("username-chosen").innerHTML= `<h2>${userName}</h2>`;
 
-    if(userName == ""){
+    if(userName.trim() == ""){
         alert("Please enter a username!");
     } else {
         let nameArea = document.querySelector("#username-form");

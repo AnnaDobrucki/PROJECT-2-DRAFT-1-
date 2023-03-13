@@ -74,16 +74,20 @@ h1 {
 
 #username-display-area{
     display: flex;
-    flex-direction: left;
-    width: 3rem;
-    margin-top: 5px;;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .board-text {
     font-family: Permanent Marker, sans-serif;
     color: #FF3B74;
     font-size: 170%;
-    padding-left: 75px;
 }
 
 .score-area {
