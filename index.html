@@ -14,12 +14,12 @@
 <body>
     <div>
         <h1 id="title-card"> Tik Tac Toe </h1>
-       
+        <p class="board-text">Enter challenger name here!</p>
+
         <div id="username-display-area">
-            <p>Enter challenger name here!</p>
             <form id="username-form">
                 <input type="text" id="user-name" placeholder="Enter Username" name="username" required>
-                <input type="submit" value="Submit Username" />
+                <input type="submit" id="submit-btn" value="Submit Username" />
             </form>
             <span id="username-chosen"></span> 
         </div>
@@ -39,12 +39,12 @@
             <div class="box" id="7"></div>
             <div class="box" id="8"></div>
         </div>
+
+        <div class="score-area">
+            <p class="scores" id="name-score"> Score Win <span  class="counter-color" id="win">0</span></p>
+            <p class="scores"> Nemisis Win <span class="counter-color" id="loose">0</span></p>
+        </div>
         <span> Game Over </span>
-    </div>
-   
-    <div class="score-area">
-        <p class="scores" id="name-score"> Score Win <span id="win">0</span></p>
-        <p class="scores"> Nemisis Win <span id="loose">0</span></p>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
