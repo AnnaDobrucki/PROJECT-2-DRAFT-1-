@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: Permanent Marker, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -17,8 +17,9 @@ h1 {
     color: #FF3B74;
 }
 
-.container {
-    height: 100vh;
+.contanier{
+    height: 60vh;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,25 +27,32 @@ h1 {
 }
 
 #play-board{
-    display: grid;
-  width: 450px;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin: 1em;
-
+    display: flex;
+    width: 20em;
+    height: 20em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1em;
 }
 
 .box {
-    height: 150px;
-    width: 150px;
-    border: white 1px solid;
-    border-radius: 5px;
-    margin: 1px;
-    text-align: center;
-
-    justify-content: center;
-    align-content: center;
+    height: 5em;
+    width: 5em;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: white 2px solid;
+    border-radius: 5px;
+}
 
+#btn-replay {
+    font-size: 160%;
+    color: #fafafa;
+    background-color: #FF3B74;
+    font-family: Permanent Marker, sans-serif;
+    border-radius: 20%;
+    padding: 20px;
+    box-shadow: 2px 3px #fafafa;
 }
