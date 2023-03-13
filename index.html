@@ -13,8 +13,28 @@
 </head>
 <body>
     <div>
+        <!-- Title -->
         <h1 id="title-card"> Tik Tac Toe </h1>
 
+        <div>
+           <button id="myBtn">Rules</button>
+           <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                    <ol>
+                        <li>Take turns in marking each of the tiles against the computer!</li>
+                        <li>You will be 'X' and the computer 'O'.</li>
+                        <li>You will start first, just click on one of the squares to start.</li>
+                        <li>The first to have 3 in a row wins! If all tiles are full with no clear winner, it's a draw.</li>
+                        <li>Press the Replay button to clear the tiles, and go again.</li>
+                    </ol>
+                </p>
+        
+  </div>
+
+        <!-- Username Section -->
         <div id="username-display-area">
             <form id="username-form">
                 <p class="board-text">Enter challenger name here!</p>
@@ -24,6 +44,7 @@
             <span id="username-chosen"></span> 
         </div>
     </div>
+    <!-- Gameboard and Replay Section-->
     <div class="contanier">
         <button id="btn-replay">Replay</button>
 
@@ -38,7 +59,7 @@
             <div class="box" id="7"></div>
             <div class="box" id="8"></div>
         </div>
-
+<!-- Score Area for player -->
         <div class="score-area">
             <p class="scores" id="name-score"> Score Win <span  class="counter-color" id="win">0</span></p>
             <p class="scores"> Nemesis Win <span class="counter-color" id="loose">0</span></p>
