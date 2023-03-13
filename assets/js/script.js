@@ -7,6 +7,8 @@ usernameForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const userName = event.target.username.value;
     document.getElementById("username-chosen").innerHTML= `<h2 id="username-style">${userName} VS Nemesis</h2>`;
+    document.getElementById("name-score").innerHTML = `<p>${userName}'s score <span  class="counter-color" id="win">0</span> </p>`;
+
 
     if(userName.trim() == ""){
         alert("Please enter a username!");
@@ -32,7 +34,6 @@ function scoreWin() {
 
     let scoreWin = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++scoreWin;
-    document.getElementById("name-score").innertext = `<p>${userName}</p>`
 }
 /**
  * Function for incrementing score for computer (Nemisis) win
@@ -44,8 +45,10 @@ function scoreWin() {
     document.getElementById("loose").innerText = ++scoreLoose;
 }
 
-
-var modal = document.getElementById("myModal");
+/**
+ * Functions to create a pop out modal for rules of the game
+ */
+var modal = document.getElementById("model-pop-out");
 var btn = document.getElementById("rules-button");
 var span = document.getElementsByClassName("close")[0];
 
