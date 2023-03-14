@@ -65,3 +65,18 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+let titleCard = document.getElementById("titleCard")
+let replaybtn = document.getElementById("btn-replay")
+let boxes = Array.from(document.getElementsByClassName("box"))
+
+const O_text = "O"
+const X_text = "X"
+let currentPlayer = X_text
+let spaces = Array(9).fill(null)
+
+boxes.forEach(function(box){
+  box.addEventListener('click', function(){
+    box.innerText = currentPlayer;
+  })
+})
