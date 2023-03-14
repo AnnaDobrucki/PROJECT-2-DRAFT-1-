@@ -74,9 +74,22 @@ const O_text = "O"
 const X_text = "X"
 let currentPlayer = X_text
 let spaces = Array(9).fill(null)
+let winCombos = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
 
 boxes.forEach(function(box){
   box.addEventListener('click', function(){
+    if(box.innerText.trim() != "") return;
     box.innerText = currentPlayer;
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    checkWin()
   })
 })
