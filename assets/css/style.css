@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-family: Permanent Marker, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -75,6 +75,7 @@ h1 {
     color: #fafafa;
     background-color: #FF3B74;
     font-family: Permanent Marker, sans-serif;
+    margin-top: 20px;
     border-radius: 20%;
     padding: 20px;
     display: flex;
@@ -143,6 +144,9 @@ h1 {
     text-align: center;
     color: #FF3B74;
     font-size: 200%;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .counter-color{
@@ -152,7 +156,7 @@ h1 {
 /* The pop out for Rules and Info */
 
 #rules-button{
-    font-size: 120%;
+    font-size: 110%;
     color: #fafafa;
     background-color: #FF3B74;
     font-family: Permanent Marker, sans-serif;
