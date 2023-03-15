@@ -19,13 +19,14 @@ usernameForm.addEventListener('submit', function(event) {
     }
 })
 
-function checkGame(){
+
+
+
     /**
      * Make sure to come back and add the if - else to the score increase)
-     */
-    scoreWin();
+     *  scoreWin();
     scoreLoose();
- }
+     */
 
 /**
  * Function for incrementing score for user wins
@@ -39,7 +40,7 @@ function scoreWin() {
  * Function for incrementing score for computer (Nemisis) win
  */
 
-function scoreWin() {
+function scoreLoose() {
 
     let scoreLoose = parseInt(document.getElementById("loose").innerText);
     document.getElementById("loose").innerText = ++scoreLoose;
@@ -66,13 +67,16 @@ window.onclick = function(event) {
   }
 }
 
-let titleCard = document.getElementById("titleCard")
-let replaybtn = document.getElementById("btn-replay")
-let boxes = Array.from(document.getElementsByClassName("box"))
+/**
+ * functions for building the game mechanics 
+ */
 
-const O_text = "O"
-const X_text = "X"
-let currentPlayer = X_text
+let titleCard = document.getElementById("titleCard")
+let replayBtn = document.getElementById("btn-replay")
+let boxes = Array.from(document.getElementsByClassName("box"))
+let turnCounter = 0
+
+let currentPlayer = 'X'
 let spaces = Array(9).fill(null)
 let winCombos = [
   [0, 1, 2],
@@ -93,3 +97,31 @@ boxes.forEach(function(box){
     checkWin()
   })
 })
+
+/**
+ * 
+ * Check win function
+ */
+function checkForWinner(){
+  winCombos.forEach(function(combo){
+      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer);
+      if(check){
+          alert ( currentPlayer + "won!")
+      }
+  })
+}
+ /**
+  * resets the game for new one
+  */
+ replayBtn.addEventListener('click', replay)
+
+ function replay() {
+     spaces.fill(null)
+ 
+     boxes.forEach( box => {
+         box.innerText = '';
+         box.style.backgroundColor='';
+     })
+     currentPlayer = "X"
+ }
+
