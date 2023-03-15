@@ -73,6 +73,8 @@ window.onclick = function(event) {
 
 let titleCard = document.getElementById("titleCard")
 let replayBtn = document.getElementById("btn-replay")
+let startOverBtn = document.getElementById("btn-startOver")
+
 let boxes = Array.from(document.getElementsByClassName("box"))
 let turnCounter = 0
 
@@ -125,3 +127,8 @@ function checkForWinner(){
      currentPlayer = "X"
  }
 
+ startOverBtn.addEventListener('click', startOver)
+
+function startOver() {
+  location.reload();
+}
