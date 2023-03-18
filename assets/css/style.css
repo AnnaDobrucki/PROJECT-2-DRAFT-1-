@@ -223,6 +223,15 @@ h1 {
     text-transform: uppercase;
 }
 
-  
+.error-style{
+    font-size: 1.5rem;
+    font-family: Permanent Marker, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    color: #fafafa;
+    margin-top: 10px;;
+}
 
   
