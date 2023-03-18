@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-
+/* Main Body and heading style set*/
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +21,8 @@ h1 {
     color: #FF3B74;
 
 }
+
+/* Enter user name and Submit button style and features*/
 
 #user-name{
     font-size: 150%;
@@ -49,7 +51,7 @@ h1 {
     transition: 200ms;
 }
 
-
+/* Username Display Style*/
 #username-display-area{
     display: flex;
     align-items: center;
@@ -69,6 +71,8 @@ h1 {
     color: #FF3B74;
     font-size: 220%;
 }
+
+/* Replay and Re start button style*/
 
 #btn-replay {
     font-size: 160%;
@@ -106,7 +110,7 @@ h1 {
     box-shadow: 0px 6px #3C3F42;
     transition: 200ms;
 }
-
+/* Playboard design style*/
 .contanier{
     height: 70vh;
     padding: 10px;
@@ -172,6 +176,7 @@ h1 {
     transition: 200ms;
 }
 
+  /* Modal Content/Box */
 .modal {
     display: none; 
     position: fixed; 
@@ -183,9 +188,7 @@ h1 {
     background-color: rgba(7, 3, 6, 0.5); 
   }
   
-  
-  /* Modal Content/Box */
-  .modal-content {
+    .modal-content {
     color: #fafafa;
     font-family: Permanent Marker, sans-serif;
     font-size: 160%;
@@ -223,6 +226,8 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Style for 404 page*/
+
 .error-style{
     font-size: 1.75rem;
     font-family: Permanent Marker, sans-serif;
@@ -240,5 +245,4 @@ h1 {
     display: flex;
     justify-content: center;
    margin-top: 10px;
-   
 }
