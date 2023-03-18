@@ -124,7 +124,7 @@ function nemsisGo(){
 
 function nemsisTimer(){
   let timerId = null
-  timerId = setInterval(nemsisGo, 800);
+  timerId = setInterval(nemsisGo, 1000);
 }
 
 nemsisTimer();
