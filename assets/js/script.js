@@ -96,22 +96,39 @@ boxes.forEach(function(box){
     if(box.innerText.trim() != "") return;
     box.innerText = currentPlayer;
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-    checkWin()
+    checkForWinner();
   })
 })
 
 /**
- * 
  * Check win function
  */
 function checkForWinner(){
   winCombos.forEach(function(combo){
-      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer);
+      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
       if(check){
-          alert ( currentPlayer + "won!")
+        scoreWin();
+          alert ( currentPlayer + "won!");
       }
   })
 }
+
+function nemsisGo(){
+  if(currentPlayer == 'O'){
+    let randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)];
+    randomComputerAnswer.innerText = currentPlayer;
+    currentPlayer = currentPlayer === "O" ? "X" : "O";
+    checkForWinner();
+  }
+}
+
+function nemsisTimer(){
+  let timerId = null
+  timerId = setInterval(nemsisGo, 800);
+}
+
+nemsisTimer();
+
  /**
   * resets the game for new one
   */
