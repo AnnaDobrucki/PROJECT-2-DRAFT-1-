@@ -224,14 +224,21 @@ h1 {
 }
 
 .error-style{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-family: Permanent Marker, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
     color: #fafafa;
-    margin-top: 10px;;
+    margin-top: 40px;
 }
 
-  
+#error-style-icon{
+    font-size: 2.5rem;
+    color:#fafafa;
+    display: flex;
+    justify-content: center;
+   margin-top: 10px;
+   
+}
