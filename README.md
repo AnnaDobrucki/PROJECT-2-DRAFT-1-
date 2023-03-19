@@ -23,6 +23,24 @@ Having just done the walkthrough project of Love Maths within my studies at Code
 - Ease of use, with INSTANT recogntion of what the game was.
 - If the user has never encounterered this game before, I wanted the rules/ instructions to be available to them straight off the bat.
 - Create a username, linked to the scoreboard for added personalisation, potentially for the hope of returning use.
-- Make sure children can use this without supervision/ guidance.
+- Make sure children can use the site/game without supervision/ guidance.
+
+## Features 
+
+## Design 
+My version of Tic Tak Toe is based around children of ages 4+ being able to enjoy this game. 
+
+### Wireframes
+I wanted to have the Title front and foremost in the center, so people are drawn to the center of the page.
+I realised early on that I wanted the grid to be the first thing you see. Which meant building the rest of my ideas around the center of the page. Hence the 'Replay' being at the top of the grid and the 'Start Over' button underneath the scoreboard.
+![wireframe for laptop](documentation/wireframe%20images/wireframe-for-laptop.png "wireframe for laptop")
+
+I wanted the phone design to correspond with the laptop design, luckily because of the lack of clutter on the screen and centeral placement of most features it was easy to modify.
+
+![wireframe for phones](documentation/wireframe%20images/wireframe-for-smaller-px-phone.png "wireframe for phones")
+
+
+
+
 
 
