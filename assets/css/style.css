@@ -245,3 +245,17 @@ h1 {
     justify-content: center;
    margin-top: 10px;
 }
+
+/* Media Quieres */
+
+@media screen and (max-width: 720px) {
+    .score-area {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .score-area {
+        width: 65%;
+    }
+}

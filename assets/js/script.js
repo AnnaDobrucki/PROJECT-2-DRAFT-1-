@@ -108,7 +108,7 @@ function checkForWinner(){
       let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
       if(check){
         scoreWin();
-          alert ( currentPlayer + "won!");
+          alert ( currentPlayer + "won!"); 
       }
   })
 }
