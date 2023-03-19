@@ -1,5 +1,5 @@
 /**
- * function for the use of a username within game and removal of username input once chosen
+ * Function for the use of a username within game and removal of username input once chosen
  */
 const usernameForm = document.querySelector("#username-form");
 
@@ -129,6 +129,16 @@ function nemesisTimer(){
 
 nemesisTimer();
 
+/**
+ * Need to check WETHER THIS FUCTIONW WORKS
+ */
+function gameOver(){
+  if(scoreWin == "3"){ 
+    document.getElementById("username-chosen").innerHTML= `<h2> You Won!</h2>`;
+  }else(scoreLoose == "3"){
+    document.getElementById("username-chosen").innerHTML= `<h2> Nemesis Won! Try Again?</h2>`;
+  }
+}
  /**
   * Resets the game for new one
   */
