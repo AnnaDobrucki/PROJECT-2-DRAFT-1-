@@ -263,7 +263,7 @@ h1 {
     display: flex;
         flex-direction: column;
         text-align: center;
-        width: 50%;
+        width: 60%;
     }
     .board-text {
         font-size: 200%;
@@ -281,6 +281,23 @@ h1 {
     #username-display-area{
     margin-top: 10px;
        margin-bottom: 30px;
+    }
+    #username-style{
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        padding-bottom: 15px;
+    }
+    #rules-button{
+        font-size: 100%;
+    }
+    .score-area {
+        font-size: 175%;
+        width: 75%;
+        padding-bottom: 10px;
     }
 }
 
