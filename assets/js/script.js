@@ -19,33 +19,6 @@ usernameForm.addEventListener('submit', function(event) {
     }
 })
 
-
-
-
-    /**
-     * Make sure to come back and add the if - else to the score increase)
-     *  scoreWin();
-    scoreLoose();
-     */
-
-/**
- * Function for incrementing score for user wins
- */
-function scoreWin() {
-
-    let scoreWin = parseInt(document.getElementById("win").innerText);
-    document.getElementById("win").innerText = ++scoreWin;
-}
-/**
- * Function for incrementing score for computer (Nemisis) win
- */
-
-function scoreLoose() {
-
-    let scoreLoose = parseInt(document.getElementById("loose").innerText);
-    document.getElementById("loose").innerText = ++scoreLoose;
-}
-
 /**
  * Functions to create a pop out modal for rules of the game
  */
@@ -68,9 +41,28 @@ window.onclick = function(event) {
 }
 
 /**
- * functions for building the game mechanics 
+ * Function for incrementing score for user wins
+ */
+function scoreWin() {
+
+    let scoreWin = parseInt(document.getElementById("win").innerText);
+    document.getElementById("win").innerText = ++scoreWin;
+}
+/**
+ * Function for incrementing score for computer (Nemisis) win
  */
 
+function scoreLoose() {
+
+    let scoreLoose = parseInt(document.getElementById("loose").innerText);
+    document.getElementById("loose").innerText = ++scoreLoose;
+}
+
+/**
+ * Functions for building the game mechanics 
+ *
+ * Make the global variables for the Functions below.
+ */
 let titleCard = document.getElementById("titleCard")
 let replayBtn = document.getElementById("btn-replay")
 let startOverBtn = document.getElementById("btn-startOver")
@@ -91,6 +83,9 @@ let winCombos = [
   [2, 4, 6],
 ];
 
+/**
+ * Function for User to go first and play as "X"
+ */
 boxes.forEach(function(box){
   box.addEventListener('click', function(){
     if(box.innerText.trim() != "") return;
@@ -113,7 +108,10 @@ function checkForWinner(){
   })
 }
 
-function nemsisGo(){
+ /**
+  * Function for Nemesis Turn
+  */
+function nemesisGo(){
   if(currentPlayer == 'O'){
     let randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)];
     randomComputerAnswer.innerText = currentPlayer;
@@ -121,16 +119,18 @@ function nemsisGo(){
     checkForWinner();
   }
 }
-
-function nemsisTimer(){
+ /**
+  * Function for Nemesis Timer
+  */
+function nemesisTimer(){
   let timerId = null
-  timerId = setInterval(nemsisGo, 1000);
+  timerId = setInterval(nemesisGo, 1000);
 }
 
-nemsisTimer();
+nemesisTimer();
 
  /**
-  * resets the game for new one
+  * Resets the game for new one
   */
  replayBtn.addEventListener('click', replay)
 
@@ -143,6 +143,10 @@ nemsisTimer();
      })
      currentPlayer = "X"
  }
+
+  /**
+  * Resets the game for completely new player
+  */
 
  startOverBtn.addEventListener('click', startOver)
 
