@@ -66,10 +66,7 @@ function scoreLoose() {
 let titleCard = document.getElementById("titleCard")
 let replayBtn = document.getElementById("btn-replay")
 let startOverBtn = document.getElementById("btn-startOver")
-
 let boxes = Array.from(document.getElementsByClassName("box"))
-let turnCounter = 0
-
 let currentPlayer = 'X'
 let spaces = Array(9).fill(null)
 let winCombos = [
@@ -102,18 +99,37 @@ function checkForWinner(){
   winCombos.forEach(function(combo){
       let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
       if(check){
-        scoreWin();
-          alert ( currentPlayer + "won!"); 
+
+        let winner = currentPlayer
+        if (winner === "X") {
+            alert("You win!");
+            scoreWin();
+        } else if (winner === "O") {
+           alert("Fraid you lost and Nemesis won this time!")
+           scoreLoose();
+        } 
+    } else if (boxFull()) {
+      alert("It's a draw!")
+      replay();
+          } 
+});
       }
-  })
-}
+      let boxFull = () => {
+        return Array.from(boxes).every(box => box.textContent !== "");
+   };
+
 
  /**
   * Function for Nemesis Turn
   */
 function nemesisGo(){
   if(currentPlayer == 'O'){
-    let randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)];
+    let randomComputerAnswer;
+    do {
+        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)]
+    } while (
+        randomComputerAnswer.textContent !== ""
+    )
     randomComputerAnswer.innerText = currentPlayer;
     currentPlayer = currentPlayer === "O" ? "X" : "O";
     checkForWinner();
