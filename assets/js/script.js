@@ -2,6 +2,7 @@
  * Function for the use of a username within game and removal of username input once chosen
  */
 const usernameForm = document.querySelector("#username-form");
+let nameArea = document.querySelector("#username-form");
 
 usernameForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -14,7 +15,6 @@ usernameForm.addEventListener('submit', function(event) {
         alert("Please enter a username!");
         startOver();
     } else {
-        let nameArea = document.querySelector("#username-form");
         nameArea.style.display = "none";
     }
 })
@@ -103,13 +103,16 @@ function checkForWinner(){
       if(check){
 
         if (currentPlayer === "X") {
-            alert("You win!");
-            replay();
+          nameArea.style.display = "none";
+          document.getElementById("username-chosen").innerHTML= `<h2> You Won!</h2>`;
+
+          replay();
             scoreWin();
 
         } else if (currentPlayer === "O") {
-           alert("Fraid you lost and Nemesis won this time!");
-           replay();
+          nameArea.style.display = "none";
+          document.getElementById("username-chosen").innerHTML= `<h2> Oh No! Nemesis won this time!</h2>`;
+          replay();
            scoreLoose();
         } } else if (boxFull()) {
       alert("It's a draw!")
