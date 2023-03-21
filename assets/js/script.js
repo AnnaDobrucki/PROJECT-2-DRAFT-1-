@@ -10,7 +10,6 @@ usernameForm.addEventListener('submit', function(event) {
     document.getElementById("username-chosen").innerHTML= `<h2 id="username-style">${userName} VS Nemesis</h2>`;
     document.getElementById("name-score").innerHTML = `<p>${userName}'s score <span  class="counter-color" id="win">0</span></p>`;
 
-
     if(userName.trim() == ""){
         alert("Please enter a username!");
         startOver();
@@ -103,25 +102,32 @@ function checkForWinner(){
       if(check){
 
         if (currentPlayer === "X") {
-          nameArea.style.display = "none";
-          document.getElementById("username-chosen").innerHTML= `<h2> You Won!</h2>`;
-          replay();
           scoreWin();
-        } else if (currentPlayer === "O") {
-          nameArea.style.display = "none";
-          document.getElementById("username-chosen").innerHTML= `<h2> Oh No! Nemesis won this time!</h2>`;
+          document.getElementById("result-message").innerHTML= `<h2> You Won! </h2>`;
+          setTimeout(removeMessage, 2000);
           replay();
-           scoreLoose();
+        } else if (currentPlayer === "O") {
+          scoreLoose();
+          document.getElementById("result-message").innerHTML= `<h2> Oh No! Nemesis won this time!</h2>`;
+          setTimeout(removeMessage, 2000);
+          replay();
         } } else if (boxFull()) {
-          nameArea.style.display = "none";
-          document.getElementById("username-chosen").innerHTML= `<h2>Oops, It's a Draw...</h2>`;
+          document.getElementById("result-message").innerHTML= `<h2>Oops, It's a Draw...</h2>`;
+          setTimeout(removeMessage, 2000);
           replay();
           } 
+
+          function removeMessage() {
+            let resultMessage = document.querySelector("#result-message");
+            resultMessage.style.display = "none";
+        }
+
+          
 });
 
       }
 
-      let boxFull = () => {
+let boxFull = () => {
         return Array.from(boxes).every(box => box.textContent !== "");
    };
 
@@ -163,8 +169,7 @@ nemesisTimer();
      boxes.forEach( box => {
          box.innerText = '';
          box.style.backgroundColor='';
-     })
-     currentPlayer = "X"
+     }) 
  }
 
   /**
