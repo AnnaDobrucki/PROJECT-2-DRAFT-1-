@@ -21,6 +21,13 @@ h1 {
     color: #FF3B74;
 }
 
+h2{
+    font-family: Permanent Marker, sans-serif;
+    color: #fafafa;
+    letter-spacing: 2px;
+    font-size: 220%;
+}
+
 /* Enter user name and Submit button style and features*/
 
 #user-name{

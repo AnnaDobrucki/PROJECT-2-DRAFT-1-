@@ -105,18 +105,17 @@ function checkForWinner(){
         if (currentPlayer === "X") {
           nameArea.style.display = "none";
           document.getElementById("username-chosen").innerHTML= `<h2> You Won!</h2>`;
-
           replay();
-            scoreWin();
-
+          scoreWin();
         } else if (currentPlayer === "O") {
           nameArea.style.display = "none";
           document.getElementById("username-chosen").innerHTML= `<h2> Oh No! Nemesis won this time!</h2>`;
           replay();
            scoreLoose();
         } } else if (boxFull()) {
-      alert("It's a draw!")
-      replay();
+          nameArea.style.display = "none";
+          document.getElementById("username-chosen").innerHTML= `<h2>Oops, It's a Draw...</h2>`;
+          replay();
           } 
 });
 
