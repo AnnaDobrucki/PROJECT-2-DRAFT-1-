@@ -100,30 +100,21 @@ function checkForWinner(){
   winCombos.forEach(function(combo){
       let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
       if(check){
-
         if (currentPlayer === "X") {
+          replay(); 
           scoreWin();
           document.getElementById("result-message").innerHTML= `<h2> You Won! </h2>`;
-          setTimeout(removeMessage, 2000);
-          replay();
         } else if (currentPlayer === "O") {
+          replay(); 
           scoreLoose();
-          document.getElementById("result-message").innerHTML= `<h2> Oh No! Nemesis won this time!</h2>`;
-          setTimeout(removeMessage, 2000);
-          replay();
+          document.getElementById("result-message").innerHTML= `<h2> You Lost! </h2>`;
         } } else if (boxFull()) {
-          document.getElementById("result-message").innerHTML= `<h2>Oops, It's a Draw...</h2>`;
-          setTimeout(removeMessage, 2000);
           replay();
+          document.getElementById("result-message").innerHTML= `<h2> It's a draw! </h2>`;
           } 
 
-          function removeMessage() {
-            let resultMessage = document.querySelector("#result-message");
-            resultMessage.style.display = "none";
-        }
-
-          
-});
+}
+);
 
       }
 

@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 3.8rem;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     display: flex;
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2{
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     color: #fafafa;
     letter-spacing: 2px;
     font-size: 220%;
@@ -33,7 +33,7 @@ h2{
 #user-name{
     font-size: 150%;
     color: #a609ce;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     border-radius: 10%;
     padding: 10px;
     margin-bottom: 10px;
@@ -43,7 +43,7 @@ h2{
     font-size: 150%;
     color: #fafafa;
     background-color: #FF3B74;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     border-radius: 10%;
     padding: 10px;
     box-shadow: 2px 3px #fafafa;
@@ -65,7 +65,7 @@ h2{
 }
 
 #username-style{
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     color: #fafafa;
     border-bottom: 3px dashed #fafafa;
     letter-spacing: 3px;
@@ -73,18 +73,29 @@ h2{
 }
 
 .board-text {
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     color: #FF3B74;
     font-size: 220%;
 }
 
+/* Results Message style */
+
+#result-message{
+    margin-top: 10px;
+    font-family: 'Permanent Marker', sans-serif;
+    color: #fafafa;
+    letter-spacing: 2px;
+    font-size: 100%;
+    display:flex;
+    justify-content: center;
+}
 /* Replay and Re start button style*/
 
 #btn-replay {
     font-size: 160%;
     color: #fafafa;
     background-color: #FF3B74;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     margin-top: 20px;
     border-radius: 20%;
     padding: 20px;
@@ -103,7 +114,7 @@ h2{
     font-size: 160%;
     color: #fafafa;
     background-color: #FF3B74;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     border-radius: 20%;
     padding: 20px;
     display: flex;
@@ -121,6 +132,7 @@ h2{
 .contanier{
     height: 70vh;
     padding: 10px;
+    margin-top: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +162,7 @@ h2{
 
 .score-area {
     text-transform: uppercase;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     text-align: center;
     color: #FF3B74;
     font-size: 200%;
@@ -169,7 +181,7 @@ h2{
     font-size: 110%;
     color: #fafafa;
     background-color: #FF3B74;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     border-radius: 10%;
     margin-left: 20px;
     padding: 10px;
@@ -196,7 +208,7 @@ h2{
   
 .modal-content {
     color: #fafafa;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 160%;
     background-color: rgba(197, 10, 214, 0.9); 
     margin: 15% auto; 
@@ -225,7 +237,7 @@ h2{
   }
 
   .box {
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     color: #fafafa;
     font-size: 120;
     text-transform: uppercase;
@@ -235,7 +247,7 @@ h2{
 
 .error-style{
     font-size: 1.75rem;
-    font-family: Permanent Marker, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: flex;
@@ -258,6 +270,9 @@ h2{
     .score-area {
         width: 65%;
     }
+    #result-message{
+        font-size: 80%;
+    }
 }
 
 @media screen and (max-width: 555px) {
@@ -272,13 +287,14 @@ h2{
         text-align: center;
         width: 60%;
     }
+   
     .board-text {
         font-size: 200%;
         }
 
     #user-name{
         font-size: 110%;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         text-align: center;
     }
 
