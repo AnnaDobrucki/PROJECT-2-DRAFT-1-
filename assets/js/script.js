@@ -12,7 +12,7 @@ usernameForm.addEventListener('submit', function(event) {
 
     if(userName.trim() == ""){
         alert("Please enter a username!");
-
+        startOver();
     } else {
         let nameArea = document.querySelector("#username-form");
         nameArea.style.display = "none";
@@ -47,6 +47,7 @@ function scoreWin() {
 
     let scoreWin = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++scoreWin;
+
 }
 /**
  * Function for incrementing score for computer (Nemisis) win
@@ -56,6 +57,7 @@ function scoreLoose() {
 
     let scoreLoose = parseInt(document.getElementById("loose").innerText);
     document.getElementById("loose").innerText = ++scoreLoose;
+
 }
 
 /**
@@ -87,8 +89,8 @@ boxes.forEach(function(box){
   box.addEventListener('click', function(){
     if(box.innerText.trim() != "") return;
     box.innerText = currentPlayer;
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
     checkForWinner();
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
   })
 })
 
@@ -100,20 +102,23 @@ function checkForWinner(){
       let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
       if(check){
 
-        let winner = currentPlayer
-        if (winner === "X") {
+        if (currentPlayer === "X") {
             alert("You win!");
+            replay();
             scoreWin();
-        } else if (winner === "O") {
-           alert("Fraid you lost and Nemesis won this time!")
+
+        } else if (currentPlayer === "O") {
+           alert("Fraid you lost and Nemesis won this time!");
+           replay();
            scoreLoose();
-        } 
-    } else if (boxFull()) {
+        } } else if (boxFull()) {
       alert("It's a draw!")
       replay();
           } 
 });
+
       }
+
       let boxFull = () => {
         return Array.from(boxes).every(box => box.textContent !== "");
    };
@@ -131,8 +136,8 @@ function nemesisGo(){
         randomComputerAnswer.textContent !== ""
     )
     randomComputerAnswer.innerText = currentPlayer;
-    currentPlayer = currentPlayer === "O" ? "X" : "O";
     checkForWinner();
+    currentPlayer = currentPlayer === "O" ? "X" : "O";
   }
 }
  /**
@@ -144,8 +149,6 @@ function nemesisTimer(){
 }
 
 nemesisTimer();
-
-
 
  /**
   * Resets the game for new one
