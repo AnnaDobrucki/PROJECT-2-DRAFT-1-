@@ -9,6 +9,7 @@ var modal = document.getElementById("model-pop-out");
 var btn = document.getElementById("rules-button");
 var span = document.getElementsByClassName("close")[0];
 
+let titleCard = document.getElementById("titleCard");
 let replayBtn = document.getElementById("btn-replay");
 let startOverBtn = document.getElementById("btn-startOver");
 let boxes = Array.from(document.getElementsByClassName("box"));
@@ -38,8 +39,9 @@ usernameForm.addEventListener('submit', function(event) {
         alert("Please enter a username!");
         startOver();
     } else {
-  nameArea.style.display = "none";}
-  }
+        nameArea.style.display = "none";
+    }
+});
 
 /**
  * Functions to create a pop out modal for rules of the game
@@ -64,7 +66,7 @@ window.onclick = function(event) {
 function scoreWin() {
     let scoreWin = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++scoreWin;
-}
+};
 
 /**
  * Function for incrementing score for computer (Nemisis) win
@@ -73,7 +75,7 @@ function scoreWin() {
 function scoreLoose() {
     let scoreLoose = parseInt(document.getElementById("loose").innerText);
     document.getElementById("loose").innerText = ++scoreLoose;
-}
+};
 
 /**
  * Function for User to go first and play as "X"
@@ -84,7 +86,7 @@ boxes.forEach(function(box){
     box.innerText = currentPlayer;
     checkForWinner();
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-  });
+  })
 });
 
 /**
@@ -92,7 +94,7 @@ boxes.forEach(function(box){
  */
 function checkForWinner(){
   winCombos.forEach(function(combo){
-      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer);
+      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
       if(check){
         if (currentPlayer === "X") {
           replay(); 
@@ -107,7 +109,7 @@ function checkForWinner(){
           document.getElementById("result-message").innerHTML= `<h2> It's a draw! </h2>`;
           } }
           );
-      }
+      };
 
 /**
  * Function if the boxes are full for a Draw
@@ -123,44 +125,45 @@ function nemesisGo(){
   if(currentPlayer == 'O'){
     let randomComputerAnswer;
     do {
-        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)];
+        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)]
     } while (
         randomComputerAnswer.textContent !== ""
-    );
+    )
     randomComputerAnswer.innerText = currentPlayer;
     checkForWinner();
     currentPlayer = currentPlayer === "O" ? "X" : "O";
   }
-}
+};
 
  /**
   * Function for Nemesis Timer
   */
 function nemesisTimer(){
-  let timerId = null;
+  let timerId = null
   timerId = setInterval(nemesisGo, 1000);
-}
+};
 
 nemesisTimer();
 
  /**
   * Resets the game for new one
   */
- replayBtn.addEventListener('click', replay);
+ replayBtn.addEventListener('click', replay)
 
  function replay() {
      spaces.fill(null);
      boxes.forEach( box => {
          box.innerText = '';
          box.style.backgroundColor='';
-     });
- }
+     }) 
+ };
 
   /**
   * Resets the game for completely new player
   */
- startOverBtn.addEventListener('click', startOver);
+
+ startOverBtn.addEventListener('click', startOver)
 
 function startOver() {
   location.reload();
-}
+};
