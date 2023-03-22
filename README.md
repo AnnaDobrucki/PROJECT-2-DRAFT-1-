@@ -30,6 +30,8 @@ Key Features within this project:
 - Whilst I have already mentioned Tic Tak Toe is a universally well known game, it doesn't mean people know how it works, so I also built a pop out (modal) for the rules to be explained should anyone like to learn or have a quick reminder! 
 ![Modal rules](documentation/features-images/modal-rules-pop-out.png "Modal remainder")
 
+- To help people keep track of there score I installed a score counter for both the user and the computer. Whilst also storing the players username on the scoreboard.
+![scoreboard tracker](documentation/features-images/scoreboard-feature.png "scoreboard tracker")
 
 - I built in a replay and re-start function/ button. The Start Over button reloads the original page, so that the user can re enter the username and start with a fresh win/loose counter. the Replay button is meant for kids, if theyre having a good win streak, they can see if theyre loosing and restart that round. I was told it wasn't necessary by one of the Code Insitute tutors, however my response was, that it reminded me of cheat codes with retro gaming, so I wanted to keep that in.
 
@@ -55,7 +57,11 @@ I used [My Color Space ](https://mycolor.space/?hex=%23EA0661&sub=1) to get the 
 ### Font
 To me tic tak toe was always played at school, or at home with some sort of felt tip pen, so I went and found a font that gave that texture on the screen. Permenant Marker gives exactly that feel to this site thanks to [Google Fonts](https://fonts.google.com/)
 
+## Testing
 
+## Deployment 
+
+###
 
 
 
