@@ -27,8 +27,9 @@ Having just done the walkthrough project of Love Maths within my studies at Code
 
 ## Features 
 Key Features within this project:
--
-- In script.js I made the "nemesisGo" Function set with a timer, I had read about older computer games useing timers as a way to make the user think the computer had sentience due to the random amounts or time it took to have a go. So i placed a timer in to create that feel. 
+- I built in a replay and re-start function/ button. The Start Over button reloads the original page, so that the user can re enter the username and start with a fresh win/loose counter. the Replay button is meant for kids, if theyre having a good win streak, they can see if theyre loosing and restart that round. I was told it wasn't necessary by one of the Code Insitute tutors, however my response was, that it reminded me of cheat codes with retro gaming, so I wanted to keep that in.
+
+- In script.js I made the "nemesisGo" Function set with a timer, I had read about older computer games useing timers as a way to make the user think the computer had sentience due to the random amounts or time it took to have a go, so I placed a timer in to create that feel. 
 
 ## Design 
 My version of Tic Tak Toe is based around children of ages 4+ being able to enjoy this game. 
