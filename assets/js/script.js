@@ -111,13 +111,12 @@ function checkForWinner(){
         } } else if (boxFull()) {
           replay();
           document.getElementById("result-message").innerHTML= `<h2> It's a draw! </h2>`;
-          } 
-
-}
-);
-
+          } }
+          );
       }
-
+/**
+ * Function if the boxes are full for a Draw
+ */
 let boxFull = () => {
         return Array.from(boxes).every(box => box.textContent !== "");
    };
