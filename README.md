@@ -27,7 +27,8 @@ Having just done the walkthrough project of Love Maths within my studies at Code
 
 ## Features 
 Key Features within this project:
-- 
+-
+- In script.js I made the "nemesisGo" Function set with a timer, I had read about older computer games useing timers as a way to make the user think the computer had sentience due to the random amounts or time it took to have a go. So i placed a timer in to create that feel. 
 
 ## Design 
 My version of Tic Tak Toe is based around children of ages 4+ being able to enjoy this game. 
