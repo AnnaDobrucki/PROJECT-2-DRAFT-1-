@@ -39,6 +39,12 @@ I wanted the phone design to correspond with the laptop design, luckily because 
 
 ![wireframe for phones](documentation/wireframe%20images/wireframe-for-smaller-px-phone.png "wireframe for phones")
 
+### Colour Scheme 
+I recently found a teen book that gave me inspriation for this game's main colour scheme. Most of my prospective users are going to be 4+ I figured using bright colours with sharp white contract would be inviting for young children. 
+I used [My Color Space ](https://mycolor.space/?hex=%23EA0661&sub=1) to get the Hex code I wanted, and went from there.
+
+
+
 
 
 
