@@ -9,12 +9,11 @@ var modal = document.getElementById("model-pop-out");
 var btn = document.getElementById("rules-button");
 var span = document.getElementsByClassName("close")[0];
 
-let titleCard = document.getElementById("titleCard")
-let replayBtn = document.getElementById("btn-replay")
-let startOverBtn = document.getElementById("btn-startOver")
-let boxes = Array.from(document.getElementsByClassName("box"))
-let currentPlayer = 'X'
-let spaces = Array(9).fill(null)
+let replayBtn = document.getElementById("btn-replay");
+let startOverBtn = document.getElementById("btn-startOver");
+let boxes = Array.from(document.getElementsByClassName("box"));
+let currentPlayer = 'X';
+let spaces = Array(9).fill(null);
 let winCombos = [
   [0, 1, 2],
   [3, 4, 5],
@@ -39,26 +38,25 @@ usernameForm.addEventListener('submit', function(event) {
         alert("Please enter a username!");
         startOver();
     } else {
-        nameArea.style.display = "none";
-    }
-})
+  nameArea.style.display = "none";}
+  }
 
 /**
  * Functions to create a pop out modal for rules of the game
  */
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 /**
  * Function for incrementing score for user wins
@@ -86,15 +84,15 @@ boxes.forEach(function(box){
     box.innerText = currentPlayer;
     checkForWinner();
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-  })
-})
+  });
+});
 
 /**
  * Check win function
  */
 function checkForWinner(){
   winCombos.forEach(function(combo){
-      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
+      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer);
       if(check){
         if (currentPlayer === "X") {
           replay(); 
@@ -125,10 +123,10 @@ function nemesisGo(){
   if(currentPlayer == 'O'){
     let randomComputerAnswer;
     do {
-        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)]
+        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)];
     } while (
         randomComputerAnswer.textContent !== ""
-    )
+    );
     randomComputerAnswer.innerText = currentPlayer;
     checkForWinner();
     currentPlayer = currentPlayer === "O" ? "X" : "O";
@@ -139,7 +137,7 @@ function nemesisGo(){
   * Function for Nemesis Timer
   */
 function nemesisTimer(){
-  let timerId = null
+  let timerId = null;
   timerId = setInterval(nemesisGo, 1000);
 }
 
@@ -148,20 +146,20 @@ nemesisTimer();
  /**
   * Resets the game for new one
   */
- replayBtn.addEventListener('click', replay)
+ replayBtn.addEventListener('click', replay);
 
  function replay() {
-     spaces.fill(null)
+     spaces.fill(null);
      boxes.forEach( box => {
          box.innerText = '';
          box.style.backgroundColor='';
-     }) 
+     });
  }
 
   /**
   * Resets the game for completely new player
   */
- startOverBtn.addEventListener('click', startOver)
+ startOverBtn.addEventListener('click', startOver);
 
 function startOver() {
   location.reload();

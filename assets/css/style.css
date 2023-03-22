@@ -239,7 +239,6 @@ h2{
   .box {
     font-family: 'Permanent Marker', sans-serif;
     color: #fafafa;
-    font-size: 120;
     text-transform: uppercase;
 }
 
@@ -312,7 +311,7 @@ h2{
 
     #username-display-area{
     margin-top: 10px;
-       margin-bottom: 3xf0px;
+       margin-bottom: 1px;
     }
 
     #username-style{

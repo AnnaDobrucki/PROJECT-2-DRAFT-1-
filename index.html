@@ -15,13 +15,13 @@
     <div>
         <!-- Title -->
         <h1 id="title-card"> Tik Tac Toe </h1>
+    </div>
 <!-- Model for rules -->
         <div>
            <button id="rules-button">Rules</button>
            <div id="model-pop-out" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>
                     <ol id="list-style">
                         <li>Take turns in marking each of the tiles against the computer!</li>
                         <li>You will be 'X' and the computer 'O'.</li>
@@ -29,7 +29,6 @@
                         <li>The first to have 3 in a row wins! If all tiles are full with no clear winner, it's a draw.</li>
                         <li>Press the Replay button to clear the tiles, and go again.</li>
                     </ol>
-                </p>
             </div>
   </div>
         <!-- Username Section -->
@@ -37,7 +36,7 @@
             <form id="username-form">
                 <p class="board-text">Enter challenger name here!</p>
                 <input type="text" id="user-name" placeholder="Enter Username" name="username" required>
-                <input type="submit" id="submit-btn" value="Submit Username" />
+                <input type="submit" id="submit-btn" value="Submit Username">
             </form>
             <span id="username-chosen"></span> 
         </div>
