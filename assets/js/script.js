@@ -1,8 +1,33 @@
 /**
- * Function for the use of a username within game and removal of username input once chosen
+ * Functions for building the game mechanics 
+ * Make the global variables for the Functions below.
  */
 const usernameForm = document.querySelector("#username-form");
 let nameArea = document.querySelector("#username-form");
+
+var modal = document.getElementById("model-pop-out");
+var btn = document.getElementById("rules-button");
+var span = document.getElementsByClassName("close")[0];
+
+let titleCard = document.getElementById("titleCard")
+let replayBtn = document.getElementById("btn-replay")
+let startOverBtn = document.getElementById("btn-startOver")
+let boxes = Array.from(document.getElementsByClassName("box"))
+let currentPlayer = 'X'
+let spaces = Array(9).fill(null)
+let winCombos = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+/**
+ * Function for the use of a username within game and removal of username input once chosen
+ */
 
 usernameForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -21,10 +46,6 @@ usernameForm.addEventListener('submit', function(event) {
 /**
  * Functions to create a pop out modal for rules of the game
  */
-var modal = document.getElementById("model-pop-out");
-var btn = document.getElementById("rules-button");
-var span = document.getElementsByClassName("close")[0];
-
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -43,43 +64,18 @@ window.onclick = function(event) {
  * Function for incrementing score for user wins
  */
 function scoreWin() {
-
     let scoreWin = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++scoreWin;
-
 }
+
 /**
  * Function for incrementing score for computer (Nemisis) win
  */
 
 function scoreLoose() {
-
     let scoreLoose = parseInt(document.getElementById("loose").innerText);
     document.getElementById("loose").innerText = ++scoreLoose;
-
 }
-
-/**
- * Functions for building the game mechanics 
- *
- * Make the global variables for the Functions below.
- */
-let titleCard = document.getElementById("titleCard")
-let replayBtn = document.getElementById("btn-replay")
-let startOverBtn = document.getElementById("btn-startOver")
-let boxes = Array.from(document.getElementsByClassName("box"))
-let currentPlayer = 'X'
-let spaces = Array(9).fill(null)
-let winCombos = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6],
-];
 
 /**
  * Function for User to go first and play as "X"
@@ -114,13 +110,13 @@ function checkForWinner(){
           } }
           );
       }
+
 /**
  * Function if the boxes are full for a Draw
  */
 let boxFull = () => {
         return Array.from(boxes).every(box => box.textContent !== "");
    };
-
 
  /**
   * Function for Nemesis Turn
@@ -138,6 +134,7 @@ function nemesisGo(){
     currentPlayer = currentPlayer === "O" ? "X" : "O";
   }
 }
+
  /**
   * Function for Nemesis Timer
   */
@@ -155,7 +152,6 @@ nemesisTimer();
 
  function replay() {
      spaces.fill(null)
- 
      boxes.forEach( box => {
          box.innerText = '';
          box.style.backgroundColor='';
@@ -165,7 +161,6 @@ nemesisTimer();
   /**
   * Resets the game for completely new player
   */
-
  startOverBtn.addEventListener('click', startOver)
 
 function startOver() {
