@@ -66,7 +66,7 @@ window.onclick = function(event) {
 function scoreWin() {
     let scoreWin = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++scoreWin;
-};
+}
 
 /**
  * Function for incrementing score for computer (Nemisis) win
