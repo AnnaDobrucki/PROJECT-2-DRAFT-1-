@@ -130,9 +130,9 @@ h2{
 
 /* Playboard design style*/
 .contanier{
-    height: 70vh;
+    height: 65vh;
     padding: 10px;
-    margin-top: 7px;
+    margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,6 +328,9 @@ h2{
 
     #rules-button{
         font-size: 100%;
+    }
+    .contanier{
+        margin-top: 15px;
     }
 
     .score-area {
