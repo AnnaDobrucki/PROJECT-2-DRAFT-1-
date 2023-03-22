@@ -2,7 +2,7 @@
 Welcome to the well known universal game of Tic Tak Toe! (or noughts and cross depending on your preference...)
 As we all know Tic Tak Toe is one of the most common and well known games around the world, so it only felt natural to want to build one as part of my [Code Insitute Secondary Project.](https://codeinstitute.net/full-stack-software-development-diploma/)
 
-![multi-platform image](documentation/multiplatform%20image/multiplatform%20image%20on%20varying%20devices.png "Multi-platform image")
+![multi-platform image](documentation/multiplatform-image/multiplatform%20image%20on%20varying%20devices.png "Multi-platform image")
 
 
 ## Index
@@ -26,6 +26,8 @@ Having just done the walkthrough project of Love Maths within my studies at Code
 - Make sure children can use the site/game without supervision/ guidance.
 
 ## Features 
+Key Features within this project:
+- 
 
 ## Design 
 My version of Tic Tak Toe is based around children of ages 4+ being able to enjoy this game. 
@@ -33,16 +35,19 @@ My version of Tic Tak Toe is based around children of ages 4+ being able to enjo
 ### Wireframes
 I wanted to have the Title front and foremost in the center, so people are drawn to the center of the page.
 I realised early on that I wanted the grid to be the first thing you see. Which meant building the rest of my ideas around the center of the page. Hence the 'Replay' being at the top of the grid and the 'Start Over' button underneath the scoreboard.
-![wireframe for laptop](documentation/wireframe%20images/wireframe-for-laptop.png "wireframe for laptop")
+![wireframe for laptop](documentation/wireframe-images/wireframe-for-laptop.png "wireframe for laptop")
 
 I wanted the phone design to correspond with the laptop design, luckily because of the lack of clutter on the screen and centeral placement of most features it was easy to modify.
 
-![wireframe for phones](documentation/wireframe%20images/wireframe-for-smaller-px-phone.png "wireframe for phones")
+![wireframe for phones](documentation/wireframe-images/wireframe-for-smaller-px-phone.png "wireframe for phones")
 
 ### Colour Scheme 
 I recently found a teen book that gave me inspriation for this game's main colour scheme. Most of my prospective users are going to be 4+ I figured using bright colours with sharp white contract would be inviting for young children. 
 I used [My Color Space ](https://mycolor.space/?hex=%23EA0661&sub=1) to get the Hex code I wanted, and went from there.
+![color scheme](documentation/color-images/color-scheme.png "color scheme")
 
+### Font
+To me tic tak toe was always played at school, or at home with some sort of felt tip pen, so I went and found a font that gave that texture on the screen. Permenant Marker gives exactly that feel to this site thanks to [Google Fonts](https://fonts.google.com/)
 
 
 

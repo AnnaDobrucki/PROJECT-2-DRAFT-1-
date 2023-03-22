@@ -329,6 +329,10 @@ h2{
     #rules-button{
         font-size: 100%;
     }
+
+    #username-display-area{
+           margin-bottom: 10px;
+        }
     .contanier{
         margin-top: 15px;
     }
