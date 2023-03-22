@@ -334,6 +334,10 @@ h2{
     #username-display-area{
            margin-bottom: 11px;
         }
+    
+     #username-style{
+            font-size: 178%;
+        }
     .contanier{
         margin-top: 15px;
     }
