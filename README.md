@@ -61,7 +61,12 @@ To me tic tak toe was always played at school, or at home with some sort of felt
 
 ## Deployment 
 
-###
+I followed the steps through Github to deploy my site. 
+Went to Github pages and selected my main branch and deployed my site.
+![GitHub Deployment](documentation/gitHub-deployment/gitHub-depolyment-pic.png "GitHub deployment")
+
+
+
 
 
 

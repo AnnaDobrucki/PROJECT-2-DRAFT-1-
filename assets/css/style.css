@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #a609ce;
+    background-color: #5C0972;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
     letter-spacing: 3px;
     display: flex;
     justify-content: center;
-    color: #FF3B74;
+    color: #FF1458
 }
 
 h2{
@@ -32,7 +32,7 @@ h2{
 
 #user-name{
     font-size: 150%;
-    color: #a609ce;
+    color: #5C0773;
     font-family: 'Permanent Marker', sans-serif;
     border-radius: 10%;
     padding: 10px;
@@ -42,7 +42,7 @@ h2{
 #submit-btn {
     font-size: 150%;
     color: #fafafa;
-    background-color: #FF3B74;
+    background-color: #FF1458;
     font-family: 'Permanent Marker', sans-serif;
     border-radius: 10%;
     padding: 10px;
@@ -75,7 +75,7 @@ h2{
 
 .board-text {
     font-family: 'Permanent Marker', sans-serif;
-    color: #FF3B74;
+    color: #FF1458;
     font-size: 220%;
 }
 
@@ -95,7 +95,7 @@ h2{
 #btn-replay {
     font-size: 160%;
     color: #fafafa;
-    background-color: #FF3B74;
+    background-color: #FF1458;
     font-family: 'Permanent Marker', sans-serif;
     margin-top: 20px;
     border-radius: 20%;
@@ -114,7 +114,7 @@ h2{
 #btn-startOver{
     font-size: 160%;
     color: #fafafa;
-    background-color: #FF3B74;
+    background-color: #FF1458;
     font-family: 'Permanent Marker', sans-serif;
     border-radius: 20%;
     padding: 20px;
@@ -165,7 +165,7 @@ h2{
     text-transform: uppercase;
     font-family: 'Permanent Marker', sans-serif;
     text-align: center;
-    color: #FF3B74;
+    color: #FF1458;
     font-size: 200%;
     width: 45%;
     display: flex;
@@ -181,7 +181,7 @@ h2{
 #rules-button{
     font-size: 110%;
     color: #fafafa;
-    background-color: #FF3B74;
+    background-color: #066B6C;
     font-family: 'Permanent Marker', sans-serif;
     border-radius: 10%;
     margin-left: 20px;
