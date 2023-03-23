@@ -2,7 +2,7 @@
 Welcome to the well known universal game of Tic Tak Toe! (or noughts and cross depending on your preference...)
 As we all know Tic Tak Toe is one of the most common and well known games around the world, so it only felt natural to want to build one as part of my [Code Insitute Secondary Project.](https://codeinstitute.net/full-stack-software-development-diploma/)
 
-![multi-platform image](documentation/multiplatform-image/multiplatform%20image%20on%20varying%20devices.png "Multi-platform image")
+![multi-platform image](documentation/multiplatform-image/multiplatform-image-on-varying-devices.png "Multi-platform image")
 
 
 ## Index
