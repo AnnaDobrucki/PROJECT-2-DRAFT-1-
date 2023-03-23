@@ -5,10 +5,12 @@
 const usernameForm = document.querySelector("#username-form");
 let nameArea = document.querySelector("#username-form");
 
+//variables for modal
 var modal = document.getElementById("model-pop-out");
 var rulesBtn = document.getElementById("rules-button");
 var closeSpan = document.getElementsByClassName("close")[0];
 
+//variables for game logic
 let titleCard = document.getElementById("titleCard");
 let replayBtn = document.getElementById("btn-replay");
 let startOverBtn = document.getElementById("btn-startOver");
@@ -95,6 +97,7 @@ boxes.forEach(function(box){
 function checkForWinner(){
   winCombos.forEach(function(combo){
       let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
+      //if statement for winner/loose or draw and move to next game
       if(check){
         if (currentPlayer === "X") {
           replay(); 
@@ -146,7 +149,7 @@ function nemesisTimer(){
 nemesisTimer();
 
  /**
-  * Resets the game for new one
+  *Function for restart of the game - clear the board
   */
  replayBtn.addEventListener('click', replay)
 
@@ -161,7 +164,6 @@ nemesisTimer();
   /**
   * Resets the game for completely new player
   */
-
  startOverBtn.addEventListener('click', startOver)
 
 function startOver() {
