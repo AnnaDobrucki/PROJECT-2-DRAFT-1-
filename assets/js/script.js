@@ -6,8 +6,8 @@ const usernameForm = document.querySelector("#username-form");
 let nameArea = document.querySelector("#username-form");
 
 var modal = document.getElementById("model-pop-out");
-var btn = document.getElementById("rules-button");
-var span = document.getElementsByClassName("close")[0];
+var rulesBtn = document.getElementById("rules-button");
+var closeSpan = document.getElementsByClassName("close")[0];
 
 let titleCard = document.getElementById("titleCard");
 let replayBtn = document.getElementById("btn-replay");
@@ -46,11 +46,11 @@ usernameForm.addEventListener('submit', function(event) {
 /**
  * Functions to create a pop out modal for rules of the game
  */
-btn.onclick = function() {
+rulesBtn.onclick = function() {
   modal.style.display = "block";
 };
 
-span.onclick = function() {
+closeSpan.onclick = function() {
   modal.style.display = "none";
 };
 

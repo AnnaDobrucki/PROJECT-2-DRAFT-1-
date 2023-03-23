@@ -52,7 +52,11 @@ I wanted the phone design to correspond with the laptop design, luckily because 
 ### Colour Scheme 
 I recently found a teen book that gave me inspriation for this game's main colour scheme. Most of my prospective users are going to be 4+ I figured using bright colours with sharp white contract would be inviting for young children. 
 I used [My Color Space ](https://mycolor.space/?hex=%23EA0661&sub=1) to get the Hex code I wanted, and went from there.
-![color scheme](documentation/color-images/color-scheme.png "color scheme")
+![color scheme](documentation/color-images/colour-scheme.png "color scheme")
+
+After some lighthouse testing my original idea for the color scheme had to change for accesability improvements. One main change was to my rules button, which is now using this gradient.
+![rules scheme](documentation/color-images/rules-button-color.png "rules scheme")
+
 
 ### Font
 To me tic tak toe was always played at school, or at home with some sort of felt tip pen, so I went and found a font that gave that texture on the screen. Permenant Marker gives exactly that feel to this site thanks to [Google Fonts](https://fonts.google.com/)
