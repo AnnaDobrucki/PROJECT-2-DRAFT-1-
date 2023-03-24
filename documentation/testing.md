@@ -3,6 +3,7 @@
 ## Index
 
  * [Error resolution and Debugging](#error-resolution-and-debugging)
+ * [Manual testing](#manual-testing)
  * [Responsiveness Testing](#responsiveness-testing)
  * [Lighthouse testing](#lighthouse-testing)
  * [HTML, CSS & JS Validation](#html-css-js-validation)
@@ -29,7 +30,7 @@
 | Test Description (Username Input)   | Expected Outcome | Actual Outcome |
 | ----------- | ----------- | ----- |
 | Write username into input section    | Should call an alert if only spaces are entered  | Pass
-| 'Click Submit with no characters present | Should ask for the user to place a name in the input section before clicking submit  | Pass
+| 'Click' Submit with no characters present | Should ask for the user to place a name in the input section before clicking submit  | Pass
 | After name entered and submit clicked| The username input should be removed from users view | Pass
 | After name entered and username input has been dismissed | Username should appear vs Nemesis in display area| Pass
 
@@ -118,6 +119,4 @@ I used the [W3C Validation Service](https://jigsaw.w3.org/css-validator/#validat
 The final draft of my script.js came back with no errors, and warnings all relating to the version of javascript available. It also returned this 
 ![js-hint-metrics](../documentation/validation-testing-pics/metrics-returned-by-jsHint.png "js Hint metrics")
 
-
-
- 
+ [Return to READme.md](../README.md)
