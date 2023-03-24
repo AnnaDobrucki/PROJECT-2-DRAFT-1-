@@ -77,7 +77,7 @@ function scoreWin() {
 function scoreLoose() {
     let scoreLoose = parseInt(document.getElementById("loose").innerText);
     document.getElementById("loose").innerText = ++scoreLoose;
-};
+}
 
 /**
  * Function for User to go first and play as "X"
@@ -88,7 +88,7 @@ boxes.forEach(function(box){
     box.innerText = currentPlayer;
     checkForWinner();
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-  })
+  });
 });
 
 /**
@@ -96,7 +96,7 @@ boxes.forEach(function(box){
  */
 function checkForWinner(){
   winCombos.forEach(function(combo){
-      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer)
+      let check = combo.every(idx => boxes[idx].innerText.trim() == currentPlayer);
       //if statement for winner/loose or draw and move to next game
       if(check){
         if (currentPlayer === "X") {
@@ -112,7 +112,7 @@ function checkForWinner(){
           document.getElementById("result-message").innerHTML= `<h2> It's a draw! </h2>`;
           } }
           );
-      };
+      }
 
 /**
  * Function if the boxes are full for a Draw
@@ -128,30 +128,30 @@ function nemesisGo(){
   if(currentPlayer == 'O'){
     let randomComputerAnswer;
     do {
-        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)]
+        randomComputerAnswer = boxes[Math.floor(Math.random() * boxes.length)];
     } while (
         randomComputerAnswer.textContent !== ""
-    )
+    );
     randomComputerAnswer.innerText = currentPlayer;
     checkForWinner();
     currentPlayer = currentPlayer === "O" ? "X" : "O";
   }
-};
+}
 
  /**
   * Function for Nemesis Timer
   */
 function nemesisTimer(){
-  let timerId = null
+  let timerId = null;
   timerId = setInterval(nemesisGo, 1000);
-};
+}
 
 nemesisTimer();
 
  /**
   *Function for restart of the game - clear the board
   */
- replayBtn.addEventListener('click', replay)
+ replayBtn.addEventListener('click', replay);
 
  function replay() {
      spaces.fill(null);
@@ -159,13 +159,13 @@ nemesisTimer();
          box.innerText = '';
          box.style.backgroundColor='';
      }) 
- };
+ }
 
   /**
   * Resets the game for completely new player
   */
- startOverBtn.addEventListener('click', startOver)
+ startOverBtn.addEventListener('click', startOver);
 
 function startOver() {
   location.reload();
-};
+}

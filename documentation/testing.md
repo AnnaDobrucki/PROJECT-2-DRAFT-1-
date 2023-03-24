@@ -8,7 +8,11 @@
  * [HTML, CSS & JS Validation](#html-css-js-validation)
 
  ## Error Resolution and Debugging 
- Through-out coding with javascript I constantly used [JS Hint](https://jshint.com/)
+1. Originally building the game I hadn't built the nemesisGo function without the "do/ while" loop, which meant that when the "computer" went it was pick any box in the array from 0-8 (1-9) and overwriting whatever was in any cell. I had some help from one of the course tutors Ed who helped point me in the direction of the do/while loop, which helped fix this issue.
+
+2. I encountered a problem where after every go "O" kept playing regardless of my conditional operator, with some help of some console.log's I foudn that I had written some code that was overwriting the operators, which I have since removed.
+
+3. A problem I have fixed but not as I would like, was with the username input. If a user inputs spaces the alert pops up as planned, however after that there is a small glitch that seems to buffer afterwards. The writing of "VS NEMESIS" would pop up next to the username input after the alert, I have sinced create it to "display.none" afterwards, but does leave that split second of it popping up, before displaying just the username input section again.
 
  ## Manual testing
 
@@ -65,14 +69,54 @@
 | Once user wins counter goes up ++ | Counter should reflect on games won next to username | Pass
 | Once user looses Nemesis counter goes up ++ | Counter should reflect on games won by Nemesis | Pass
 
-
-
+![test scoreboard display](../documentation/testing-pics/test-scoreboard-display.png "test scoreboard display")
 
  ## Responsiveness testing 
+
+  Dev tools was my go to for understanding my sites responisveness, and correcting media quieries. My site is responsive for the below:
+   * iPhone SE
+   * iPhone XR
+   * iPhone 12 Pro
+   * Pixel 5
+   * Samsung Galaxy S8+
+   * Samsung Galaxy S20 Ultra
+   * iPad Air
+   * iPad Mini
+   * Surface Pro 7
+   * Surface Duo
+   * Samsung Galaxy A51
+   * Nest Hub Max
  
  ## Lighthouse Testing 
 
+ Using the Dev tools feature of lighthouse testing I got these results:
+![lighthouse-testing](../documentation/lighthouse-testing-pics/lighthouse-testing-pic.png "lighthouse-testing")
+
+I had orginally had a different type of colour scheme for the site, however after using lighthouse I drastically changed it from it's orginal below.
+![original-color-scheme](../documentation/lighthouse-testing-pics/original-colour-before-lighthouse.png "original-color-scheme")
+
  ## HTML, CSS & JS Validation
+ ### HTML
+
+ [Index.html - press here to live link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fannadobrucki.github.io%2FTic-Tac-Toe-P2%2F)
+
+![html validation](../documentation/validation-testing-pics/html-validation.png "html validation]")
+
+
+ ### CSS
+I used the [W3C Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate all CSS3 code used.
+
+ [style.css - press here to live link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fannadobrucki.github.io%2FTic-Tac-Toe-P2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+ ![css validation](../documentation/validation-testing-pics/css.validation.png "cssvalidation]")
+
+    
+
+ ### Javascript
+
+ Through-out coding with javascript I constantly used [JS Hint](https://jshint.com/)
+The final draft of my script.js came back with no errors, and warnings all relating to the version of javascript available. It also returned this 
+![js-hint-metrics](../documentation/validation-testing-pics/metrics-returned-by-jsHint.png "js Hint metrics")
 
 
 
