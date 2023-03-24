@@ -5,6 +5,10 @@ As we all know Tic Tak Toe is one of the most common and well known games around
 ![multi-platform image](documentation/multiplatform-image/multiplatform-image-on-varying-devices.png "Multi-platform image")
 
 
+## View the live Project
+[Click Here](https://annadobrucki.github.io/Tic-Tac-Toe-P2/)
+
+
 ## Index
 
 * [Project Goals](#project-goals)
@@ -37,6 +41,10 @@ Key Features within this project:
 
 - In script.js I made the "nemesisGo" Function set with a timer, I had read about older computer games useing timers as a way to make the user think the computer had sentience due to the random amounts or time it took to have a go, so I placed a timer in to create that feel. 
 
+- I also built a 404 page as back up for any issues with navigating the site, that allows the users to come back to the home page.
+ ![404.html](documentation/features-images/404.html.png "404.html")
+
+
 ## Design 
 My version of Tic Tak Toe is based around children of ages 4+ being able to enjoy this game. 
 
@@ -63,11 +71,42 @@ To me tic tak toe was always played at school, or at home with some sort of felt
 
 ## Testing
 
+  ### All notes related to testing are found [here](documentation/testing.md).
+
+
 ## Deployment 
 
 I followed the steps through Github to deploy my site. 
 Went to Github pages and selected my main branch and deployed my site.
 ![GitHub Deployment](documentation/gitHub-deployment/gitHub-depolyment-pic.png "GitHub deployment")
+
+* [Here is the live link image and link](https://annadobrucki.github.io/Tic-Tac-Toe-P2/)
+
+##  Credits 
+ Through-out building I predominantly used my knowledge gained from [Code Institue's Diploma Course](https://codeinstitute.net/full-stack-software-development-diploma/). As well as multiple other sources:
+
+ I went through many different sites to help me get my head around functions:
+ * [freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+ * [W3Schools](https://www.w3schools.com/js/js_functions.asp)
+ * [mdn Webdocs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+ I was also inspired by these videos:
+ * https://www.youtube.com/watch?v=oZrp3Atkz18&t=822s
+ * https://www.youtube.com/watch?v=GTLLnF30up4
+ * https://www.youtube.com/watch?v=ec8vSKJuZTk
+
+ I used other sites to help me build the site from the ground up:
+ * [Mockflow](https://mockflow.com/) to help with building wireframes for free.
+ * [favicon](https://favicon.io/favicon-generator/) to helo me embed an icon for the site.
+ * [W3School](https://www.w3schools.com/howto/howto_css_modals.asp) to help me understand how to build the rules pop out modal
+ * [mdn Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) helped me understand the way of shortening if else statements to create the flip between "X" going and "O" going.
+ * [W3School](https://www.w3schools.com/jsref/met_loc_reload.asp) gave me the ease of use for learning how to create the complete re load button for my startOver function.
+
+Specifically for design I went to these sites for fonts, Colours etc.
+* [mycolor](https://mycolor.space/?hex=%23EA0661&sub=1)
+* [GoogleFonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/search)
+
 
 
 
