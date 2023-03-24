@@ -58,6 +58,7 @@ h2{
 }
 
 /* Username Display Style*/
+
 #username-display-area{
     display: flex;
     align-items: center;
